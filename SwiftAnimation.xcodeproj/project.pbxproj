@@ -11,6 +11,11 @@
 		5BE542A32BD613B300E3BE35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE542A22BD613B300E3BE35 /* ContentView.swift */; };
 		5BE542A52BD613B600E3BE35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE542A42BD613B600E3BE35 /* Assets.xcassets */; };
 		5BE542A82BD613B600E3BE35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE542A72BD613B600E3BE35 /* Preview Assets.xcassets */; };
+		5BE542B32BD6171200E3BE35 /* LoadingIndicatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE542B22BD6171200E3BE35 /* LoadingIndicatior.swift */; };
+		5BE542B52BD61FF300E3BE35 /* MorphingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE542B42BD61FF200E3BE35 /* MorphingAnimation.swift */; };
+		5BE542B72BD6360800E3BE35 /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE542B62BD6360800E3BE35 /* TransitionView.swift */; };
+		5BE542B92BD63BF300E3BE35 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE542B82BD63BF300E3BE35 /* FancyButton.swift */; };
+		5BE542BB2BD646E400E3BE35 /* StarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE542BA2BD646E400E3BE35 /* StarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		5BE542A22BD613B300E3BE35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5BE542A42BD613B600E3BE35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE542A72BD613B600E3BE35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BE542B22BD6171200E3BE35 /* LoadingIndicatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatior.swift; sourceTree = "<group>"; };
+		5BE542B42BD61FF200E3BE35 /* MorphingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingAnimation.swift; sourceTree = "<group>"; };
+		5BE542B62BD6360800E3BE35 /* TransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
+		5BE542B82BD63BF300E3BE35 /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		5BE542BA2BD646E400E3BE35 /* StarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +61,10 @@
 		5BE5429F2BD613B300E3BE35 /* SwiftAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				5BE542A02BD613B300E3BE35 /* SwiftAnimationApp.swift */,
-				5BE542A22BD613B300E3BE35 /* ContentView.swift */,
-				5BE542A42BD613B600E3BE35 /* Assets.xcassets */,
+				5BE542B12BD613D900E3BE35 /* Resources */,
+				5BE542B02BD613D000E3BE35 /* App */,
+				5BE542AF2BD613C900E3BE35 /* Model */,
+				5BE542AE2BD613C400E3BE35 /* View */,
 				5BE542A62BD613B600E3BE35 /* Preview Content */,
 			);
 			path = SwiftAnimation;
@@ -65,6 +76,42 @@
 				5BE542A72BD613B600E3BE35 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5BE542AE2BD613C400E3BE35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BE542A22BD613B300E3BE35 /* ContentView.swift */,
+				5BE542B22BD6171200E3BE35 /* LoadingIndicatior.swift */,
+				5BE542B42BD61FF200E3BE35 /* MorphingAnimation.swift */,
+				5BE542B62BD6360800E3BE35 /* TransitionView.swift */,
+				5BE542B82BD63BF300E3BE35 /* FancyButton.swift */,
+				5BE542BA2BD646E400E3BE35 /* StarButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BE542AF2BD613C900E3BE35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BE542B02BD613D000E3BE35 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5BE542A02BD613B300E3BE35 /* SwiftAnimationApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5BE542B12BD613D900E3BE35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BE542A42BD613B600E3BE35 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE542B32BD6171200E3BE35 /* LoadingIndicatior.swift in Sources */,
 				5BE542A32BD613B300E3BE35 /* ContentView.swift in Sources */,
+				5BE542B52BD61FF300E3BE35 /* MorphingAnimation.swift in Sources */,
+				5BE542B92BD63BF300E3BE35 /* FancyButton.swift in Sources */,
+				5BE542B72BD6360800E3BE35 /* TransitionView.swift in Sources */,
 				5BE542A12BD613B300E3BE35 /* SwiftAnimationApp.swift in Sources */,
+				5BE542BB2BD646E400E3BE35 /* StarButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
